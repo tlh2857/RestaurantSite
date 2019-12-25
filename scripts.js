@@ -28,5 +28,7 @@ function validate() {
         document.getElementById('additionalInformation').focus() ;
         return false;
      }
-    return( true );
+     alert('Your request was successfully submitted!')
+    return true;
+
  }
