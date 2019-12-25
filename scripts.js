@@ -29,6 +29,7 @@ function validate() {
         return false;
      }
      alert('Your request was successfully submitted!')
+     document.getElementById("contactForm").reset();
     return true;
 
  }
