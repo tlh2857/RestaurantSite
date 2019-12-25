@@ -10,11 +10,7 @@ function validate() {
        alert( "Please provide your name!" );
        document.contactForm.name.focus() ;
        return false;
-    } else if(document.getElementById('name').value.split('').some(x=>isNaN(Number(x)))){
-        alert( "Please enter a valid name without numbers or special characters" );
-        document.contactForm.name.focus() ;
-        return false;
-    }
+    } 
     if( document.getElementById('email').value == "" ) {
        alert( "Please provide your Email!" ); //HTML form validation already checks email so validity
        document.contactForm.email.focus();
