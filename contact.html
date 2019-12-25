@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/bfab75c913.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="restaurantStyles.css">
+    <title>Restaurant</title>
+  </head>
+   
+  <style>
+    label {
+      font-weight: bold;
+    }
+    .normal{
+      font-weight:normal;
+    }
+</style>
+
+  <body>
+    
+<header>
+  <div class='jumbotron'>
+    <h3>Max's Ice House is opening a new location: Leander TX!</h3>
+    
+  </div>
+    <h5>Contact Us</h5>
+    <hr>
+    <h1>Max's Ice House</h1>
+    <h1 id='warning'>You have JavaScript disabled. This website works best if JavaScript is enabled.</h1>
+   
+    <hr>
+    <ul class='nav nav-pills'>
+      <li class='nav-item'><a class='nav-link' href='./home.html'> <i class="fas fa-home"></i> Home</a></li> <li class='nav-item'><a href='./menu.html' class='nav-link'>Menu</a></li> <li class='nav-item'><a class='nav-link active' href='./contact.html'>Contact Us</a></li>
+    </ul>
+    <hr>
+</header>
+  <div class='container'>
+<div class='row'>
+  <div class='col-12 col-sm-8 offset-sm-2'>
+  <form name='contactForm' onsubmit="return(validate())">
+        <label  for='name' title='required'>Name:</label><input class="form-control"  type='text' id='name' name='name' required><br>
+        <label  for='email' title='required'>Email:</label><input class="form-control"  type='email' id='email' name='name' required><br>
+        <label  for='phone' title='required'>phone:</label><input class="form-control" id='phone' type='tel' name='name' required><br>
+        <label title='required' for='reason'>Reason for Inquiry:</label><select class="form-control"  id='reason' name="reason" >
+            <option value="catering">Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select><br>
+       <label for='additionalInformation' title='required' > Additional Information: </label><br>
+        <textarea type='text' class="form-control" name="additionalInformation" id='additionalInformation' rows="10" cols="30" required>
+            </textarea><br>
+           <label class='normal'> Have you been to the restaurant?</label>
+        <input class="form-control"  type="radio" name="yes" value="yes" > <label class='normal' for='yes'>Yes</label>
+        <input class="form-control"  type="radio" name="no" value="no" checked> <label for='no' class='normal'>No</label><br>
+    <label class='normal' >Best days to contact you: </label>
+        <input class="form-control" type="checkbox" name="contact" value="M">M</input>
+        <input class="form-control" type="checkbox" name="contact" value="T">T</input>
+        <input class="form-control" type="checkbox" name="contact" value="M">M</input>
+        <input class="form-control" type="checkbox" name="contact" value="Th">Th</input>
+        <input class="form-control" type="checkbox" name="contact" value="F">F</input><br>
+        <input id='submit' onclick='return(validate())' type='button' class="form-control" value='Submit Request'>
+    </form>
+  </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <hr>
+  <h6>1234 Butternut Road, Dallas, TX 78500</h6>
+  <h6>123-456-7890</h6>
+</footer>
+    <!-- Optional JavaScript -->
+    <script src='scripts.js' />
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

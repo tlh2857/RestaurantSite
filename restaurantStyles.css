@@ -1,0 +1,31 @@
+#warning{
+    color:red;
+}
+header h1 {
+    font-family: 'Girassol', cursive;
+}
+
+a:link {
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    text-decoration: underline;
+    color:black;
+  }
+  
+  a:hover {
+    font-weight: bold;
+    text-decoration: underline !important;
+  }
+  
+  a:active {
+    text-decoration: none !important;
+  }
+main{
+    background-color: rgb(118, 255, 255);
+}
+.text-center{
+    font-size: 1.5rem;
+    height: 3rem;
+}
